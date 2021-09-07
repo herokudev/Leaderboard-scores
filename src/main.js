@@ -1,0 +1,1 @@
+const msg = "This is the Leaderboard project";
