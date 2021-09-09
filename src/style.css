@@ -5,10 +5,11 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: lightgoldenrodyellow;
 }
 
 .main-header {
+  color: chocolate;
   margin-top: 5%;
   margin-left: 10%;
 }
