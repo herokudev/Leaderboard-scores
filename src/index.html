@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href=".style.css">
     <title>Leaderboard project</title>
 </head>
 <body>
@@ -16,20 +15,11 @@
         <div class="left-column">
             <div class="list-header">
                 <h3>Recent scores</h3>
-                <button class="btn btn-secondary btn-light border-dark border-5 md-5">Refresh</button>
+                <button id="btnRefresh" class="btn btn-secondary btn-light border-dark border-5 md-5">Refresh</button>
             </div>
             <div class="list-items">
                 <table id="scores-container" class="table table-striped mt-5 border border-dark border-5 mb-5">
                     <tbody id="scores-List">
-                        <tr>
-                            <td>Name: 100</td>
-                        </tr>
-                        <tr>
-                            <td>Name: 20</td>
-                        </tr>
-                        <tr>
-                            <td>Name: 50</td>
-                        </tr>
                     </tbody>
                 </table>  
             </div>
@@ -47,7 +37,7 @@
                         <input type="text" id="addScore" class="form-control border border-dark border-5 md-5" placeholder="Your score" required><br>
                     </div>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                        <button class="btn btn-secondary btn-light border-dark border-5 md-5" type="button">Submit</button>
+                        <button id="btnSubmit" class="btn btn-secondary btn-light border-dark border-5 md-5" type="button">Submit</button>
                       </div>
                       
                 </div>   
