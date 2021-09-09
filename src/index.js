@@ -18,6 +18,16 @@ const addScoreBtn = () => {
   addScore.value = '';
 };
 
+const populateList = (scores) => {
+  scores.forEach((s) => {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+      <td>${s.user}: ${s.score} </td>    
+      `;
+    scoresList.appendChild(row);
+  });
+};
+
 const addScoresList = () => {
   const scoresTable = scoresList;
   while (scoresTable.hasChildNodes()) {
@@ -28,16 +38,6 @@ const addScoresList = () => {
   })
     .then((response) => response.json())
     .then((data) => populateList(data.result));
-};
-
-const populateList = (scores) => {
-  scores.forEach((s) => {
-    const row = document.createElement('tr');
-    row.innerHTML = `
-      <td>${s.user}: ${s.score} </td>    
-      `;
-    scoresList.appendChild(row);
-  });
 };
 
 document.addEventListener('DOMContentLoaded', () => {
